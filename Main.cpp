@@ -6,16 +6,9 @@
 #include<algorithm>
 using namespace std;
 
-enum calcOptions
-{
-	total,
-	average,
-	numPassed,
-	highest,
-	lowest
-};
+enum calcOptions{total,average,numPassed,highest,lowest};//enum to control calc options
 
-vector<int> marks;
+vector<int> marks;// global vector containing students marks
 
 void input()
 {
@@ -28,7 +21,7 @@ void input()
 		{
 		marks.push_back(currentInput);
 		}
-		system("cls");
+		system("cls");// command is not system agnostic so may not work on some machines
 	}	
 }
 string calc( int lowerLimit, int upperlimit )
@@ -75,15 +68,15 @@ string calc( calcOptions c)
 }
 void draw()
 {	
-	cout << "0-29:   "							<< calc(  0, 29)				<< endl;
-	cout << "30-39   "							<< calc( 30, 39)				<< endl;
-	cout << "40-69   "							<< calc( 40, 69)				<< endl;
-	cout << "70-100  "							<< calc( 70, 100)				<< endl;
-	cout << "Total Students: "					<< calc( calcOptions::total)	<< endl;
-	cout << "Average Marks Awarded: "			<< calc( calcOptions::average)	<< endl;
-	cout << "number of students passing: "		<< calc( calcOptions::numPassed)<< endl;
-	cout << "Highest Mark: "					<< calc( calcOptions::highest)	<< endl;
-	cout << "Lowest Mark: "						<< calc( calcOptions::lowest)	<< endl;
+	cout << "0-29:   "						<< calc(  0, 29)				<< endl;
+	cout << "30-39   "						<< calc( 30, 39)				<< endl;
+	cout << "40-69   "						<< calc( 40, 69)				<< endl;
+	cout << "70-100  "						<< calc( 70, 100)				<< endl;
+	cout << "Total Students: "				<< calc( calcOptions::total)	<< endl;
+	cout << "Average Marks Awarded: "		<< calc( calcOptions::average)	<< endl;
+	cout << "number of students passing: "	<< calc( calcOptions::numPassed)<< endl;
+	cout << "Highest Mark: "				<< calc( calcOptions::highest)	<< endl;
+	cout << "Lowest Mark: "					<< calc( calcOptions::lowest)	<< endl;
 }
 int main() 
 {
