@@ -68,13 +68,13 @@ string calc( calcOptions c)
 }
 void draw()
 {	
-	cout << "0-29:   "<< calc(  0, 29)<< endl;
+	cout << "0-29:   "						<< calc(  0, 29)<< endl;
 	cout << "30-39   "<< calc( 30, 39)<< endl;
 	cout << "40-69   "<< calc( 40, 69)<< endl;
 	cout << "70-100  "<< calc( 70, 100)<< endl;
 	cout << "Total Students: "<< calc( calcOptions::total)<< endl;
 	cout << "Average Marks Awarded: "<< calc( calcOptions::average)<< endl;
-	cout << "number of students passing: "<< calc( calcOptions::numPassed)<< endl;
+	cout << "number of students passing: "	<< calc( calcOptions::numPassed)<< endl;
 	cout << "Highest Mark: "<< calc( calcOptions::highest)<< endl;
 	cout << "Lowest Mark: "<< calc( calcOptions::lowest)<< endl;
 }
