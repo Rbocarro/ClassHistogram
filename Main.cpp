@@ -75,8 +75,8 @@ void draw()
 	cout << "Total Students: "		<< calc( calcOptions::total)<< endl;
 	cout << "Average Marks Awarded: "	<< calc( calcOptions::average)<< endl;
 	cout << "number of students passing: "	<< calc( calcOptions::numPassed)<< endl;
-	cout << "Highest Mark: "<< calc( calcOptions::highest)<< endl;
-	cout << "Lowest Mark: "	<< calc( calcOptions::lowest)<< endl;
+	cout << "Highest Mark: "		<< calc( calcOptions::highest)<< endl;
+	cout << "Lowest Mark: "			<< calc( calcOptions::lowest)<< endl;
 }
 int main() 
 {
