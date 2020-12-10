@@ -11,22 +11,22 @@ vector<int> marks;// global vector containing students marks
 
 void input()
 {
-	int currentInput=0;
+	int currentInput=0;//current input is passed on to the end of the vector. initailly pirmed to 0
 	while (currentInput <= 100)
 	{
 		cout << "Input Marks:";
 		cin >> currentInput;
 		if (currentInput <= 100)
 		{
-		marks.push_back(currentInput);
+		marks.push_back(currentInput);//current input is passed on to the end of the vector
 		}
 		system("cls");// command is not system agnostic so may not work on some machines
 	}	
 }
 string calc( int lowerLimit, int upperlimit )
 {
-	string output="";
-	int counter = 0;
+	string output="";//empty string to store asterix's
+	int counter = 0;//counter to count number of student marks within a specific range
 	for (int i = 0; i < marks.size(); i++)
 	{
 		if (marks[i] >= lowerLimit && marks[i] <= upperlimit)
@@ -42,7 +42,7 @@ string calc( int lowerLimit, int upperlimit )
 }
 string calc( calcOptions c)
 {
-	string output="";
+	string output="";//empty string to store calculated result
 	switch (c) 
 	{
 	case calcOptions::total:
