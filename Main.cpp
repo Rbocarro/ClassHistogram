@@ -75,7 +75,7 @@ void draw()
 }
 int main() 
 {
-	input();
-	draw();
+	input();//user input
+	draw();//draws histogram and data to the screen
 	return(0);
 }
