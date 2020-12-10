@@ -17,9 +17,7 @@ void input()
 		cout << "Input Marks:";
 		cin >> currentInput;
 		if (currentInput <= 100)
-		{
-		marks.push_back(currentInput);//current input is passed on to the end of the vector
-		}
+			marks.push_back(currentInput);//current input is passed on to the end of the vector
 		system("cls");// command is not system agnostic so may not work on some machines
 	}	
 }
@@ -30,9 +28,7 @@ string calc( int lowerLimit, int upperlimit )
 	for (int i = 0; i < marks.size(); i++)
 	{
 		if (marks[i] >= lowerLimit && marks[i] <= upperlimit)
-		{
 			counter++;
-		}
 	}
 	for (int i = 0; i < counter; i++)
 	{
